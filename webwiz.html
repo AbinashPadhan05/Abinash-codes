@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT ROURKELA FEST</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: blueviolet
+        }
+        .footer{
+            margin-top: 150px;
+            padding: 100px 15%;
+            background: fixed;
+            color: white;
+            display: flex;
+        }
+        li a{
+            color: bisque;
+        }
+        .col1{
+            flex-grow: 2;
+           
+        }
+        .col2{
+            flex-grow: 2;
+        }
+        .col1 a{
+            display: block;
+            margin-bottom: 10px;
+            color: beige;
+        }
+            #buttons button{
+            padding: 15px;
+        }
+        .navbar{
+            background-color: brown;
+            border-radius: 30px;
+            margin: 100;
+            margin: 15px 20px;
+            padding: 5px;
+        }
+    
+        .navbar li {
+            float: left;
+            list-style-type: none;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            margin: 13px 20px;
+            font-size: 100%;
+        }
+
+        .navbar li a:hover{
+            color: blue;
+        }
+            
+    
+        .search{
+            text-align: right;
+        }
+        #inno{
+            display: flex;
+            border: 2px solid black;
+            font-size: 250%;
+            border-radius: 40px;
+            background-color: lightgray;
+        }
+        #image1{
+            border-radius: 40px;
+        }
+    h3{
+        font-size: 300%;
+        padding-left: 35px;
+       }
+       #Nitrutsav{
+        display: flex;
+            border: 2px solid black;
+            font-size: 250%;
+            border-radius: 40px;
+            background-color: aqua;
+            text-align: center;
+
+
+       }  
+    
+       #nu{
+        text-align: right;
+        padding-right: 35px;
+        padding-top: 30px;
+       }
+       #image2{
+        border-radius: 40px;
+       }
+       #Cosmo{
+        display: flex;
+            border: 2px solid black;
+            font-size: 250%;
+            border-radius: 40px;
+            background-color: lightgreen;
+
+       }
+       #image3{
+        width: 200%;
+        border-radius: 40px;
+       }
+    #cosmo{
+        padding-top: 30px;
+    }
+      #image4{
+        height: 500px;
+        width: 400px;
+        border-radius: 30%;
+    }
+     #vridhhi{
+        display: flex;
+            border: 2px solid black;
+            font-size: 250%;
+            border-radius: 40px;
+            background-color: lightpink;
+            text-align: center;
+  }
+    #vridh{
+        padding-top: 30px;
+        text-align: right;
+        padding-right: 35px ;
+    }
+    .container{
+        color: blanchedalmond;
+        padding-right: 20px;
+        text-align: right;
+    }
+    #heading{
+        color: aliceblue;
+        font-size: 300%;
+        text-align: center;
+    }
+        
+
+    
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <section id="heading">
+    <h1>WELCOME TO NITR FESTS</h1>
+    </section>
+</header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><b>Home</b></a> </li>
+            <li><a href="#"><b>About</b></a> </li>
+             <li><a href="#"><b>Events</b></a> </li>
+            <li><a href="#"><b>Teams</b></a> </li>
+            <div class="search">
+                <input type="text" name="search" id="search" >
+                 <input type="button" id="button" name="button"  value="&#128269"> 
+            </div>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <span id="time"></span>
+        <script>
+            console.log("date and time")
+            let now = new Date();
+            console.log(now);
+
+            let dt = new Date(1000);
+            console.log(dt);
+
+           
+            let newDate = new Date(2023,2,26,9,31,55);
+            console.log(newDate);
+
+           
+
+            newDate.setDate(8);
+            newDate.setMinutes(29);
+            console.log(newDate)
+            setInterval(updateTime, 1000);
+
+            
+
+
+            function updateTime(){
+                time.innerHTML = new Date();}
+
+                function showProm(){
+                    prompt("WELCOME !! HOW ARE YOU?");
+                }
+                function changeBGColor(){
+                    document.body.style.background = 'hotpink';
+                }
+                function changeHeading(){
+                    var n_head = document.getElementById('heading');
+                    n_head.textContent = 'NIT ROURKELA WELCOMES YOU !!';
+                }
+
+
+
+        </script>
+
+
+
+     </div>
+
+
+    <div>
+        <h3><p>INNOVISION</p></h3>
+        <div id="inno">
+           
+            <img src="https://pbs.twimg.com/profile_images/1013199204787712000/HFaOcv-H_400x400.jpg" id="image1">
+
+            <P>Innovision is one of the biggest technical fests in Eastern India. You can delve deeply into science and technology at this event. It is entirely run by the NIT Rourkela student body and provides a huge platform for many different activities, organized in the form of competitive events, guest lectures, technical workshops, and exhibitions. Technology enthusiasts can use it as a platform to show off their intelligence and ingenuity.</P>
+        </div>
+
+        <h3 id="nu">NITRUTSAV</h3>
+        <div id="Nitrutsav">
+           
+            <p>Nitrutsav, often written as NITRUtsav and popularly known as NU, is the annual cultural festival of the National Institute of Technology, Rourkela. It is an annual three-day-long carnival held towards the beginning of the month of February. Organised by the Literary Society in association with the Art and Cultural Society of the Student Activity Center, NIT Rourkela, it includes various cultural performances and events based on a common theme. Started in 2005, NU has gained immense popularity among the masses to become one of the largest of its kind in eastern India.</p>
+            <img src="https://pbs.twimg.com/profile_images/1224925568157675520/Yx0yfHXU_400x400.jpg" alt="Nitrutsav" id="image2">
+          </div>
+            <h3 id="cosmo">COSMOPOLITIAN</h3>
+          <div id="Cosmo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUXMTO9thPFo6hSbNgxIqL8LD235OmnM8ELoO1njVmSA&s" alt="cosmo" id="image3">
+          <p>Culture is society, heritage, and tradition, the family you are from, the heritage you have, and the traditions you carry forward. The multi-ethnic fest is a celebration of that culture, which will make us one, we will be united in drums and trumpets, singing like the birds in the morning with hope and passion, swayed by the rhythm, and our ancestors will join us in tune. This four-day extravaganza, will keep you on your toes with many performances and fun events.</p>
+          </div >
+          <h3 id="vridh">VRIDDHI</h3>
+          <div id="vridhhi">
+        <p>Vriddhi is one of the most prominent and celebrated sports mania across the Eastern India.It has been enhancing the sportsmanship qualities of young talents in this modern era of sports. Set in the steel city of Rourkela, NIT has some of the best sporting facilities which would bear witness to this mega event.It is ascertained that Vriddhi sparks light on the young talents,exposing every player to a tough competition and helps to grab out the mettle and transform themselves into an even more proficient player</p>
+        <img src="https://media.licdn.com/dms/image/C5603AQFGOvXUXEmW-Q/profile-displayphoto-shrink_800_800/0/1647242589888?e=2147483647&v=beta&t=z0fpaAASt7EXTt_H_PSyMWDgKBYhVWavdxYHhuU1NUs" alt="vridhhi" id="image4">
+
+          </div>
+
+
+         </div>
+
+         <div id="buttons">
+            <button onclick="showProm()">Prompt!</button>
+            <button onclick="changeBGColor()">ChangeBGcolour</button>
+            <button onclick="changeHeading()">ChangeHeading</button>
+
+        </div>
+
+
+
+
+
+
+    <footer>
+
+    <div class="footer">
+        <div class="col1">
+            <h4>DIRECT TO THE FESTS WEBSITES</h4>
+            <a href="#">Innovision</a>
+            <a href="#">Nitrutsav</a>
+            <a href="#">Vridhhi</a>
+            <a href="#">Cosmopolitian</a>
+        </div>
+
+         <div class="col2">
+            FAQ <br>
+            Cookies Policy <br>
+            Support
+        </div>
+
+        <div class="col3">
+            <h4>CONTACTS</h4>
+            <P>NIT Rourkela,Odisha <br>
+               contact:356 563 653 <br>
+               &copy copyright reserved
+  </P>
+    </footer>
+
+        </div>
+ </div>
+
+
+
+
+
+
+</body>
+</html>
